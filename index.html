@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <title>TODO's List</title>
+    </head>
+    <body>
+        <!-- header section starts -->
+        <header>
+            <div class=" header-section fluid-container">
+                <div class="container">
+                    <h4 class="mt-2 ml-4 d-inline-block">TODO's List</h4>
+                    <small class="ml-2">Created By Akash Panwar</small>
+                </div>
+            </div>
+        </header>
+        <!-- header section ends -->
+        <!-- title section starts -->
+        <section class="container my-5">
+            <h2 class="text-center">TODO's List</h2>
+            <div class="div">
+                <div class="form-group">
+                    <label for="title"><strong>Title :- </strong></label>
+                    <input type="text" class="form-control" placeholder="Enter title for list" id="tit">
+                    <small class="ml-3">Add an item to the list</small>
+            </div>
+            <div class="form-group">
+                <label for="description"><strong>Description:</strong></label>
+                <textarea class="form-control" rows="2" id="desc" placeholder="Enter Description"></textarea>
+            </div>
+            <button id="add"  class="btn btn-primary">Add to list</button>
+            <button class="btn btn-primary" onclick="clearStorage()">Clear list</button>
+        </div>
+    </section>
+    <!-- title section ends -->
+    <!-- tasks section starts-->
+    <section class="container">
+        <h2>Your Tasks</h2>
+        <table class="table table-hover my-3">
+            <thead>
+                <tr>
+                    <th>S.NO</th>
+                    <th>Item Title</th>
+                    <th>Item Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- here the task will be added throught JavaScript-->
+                
+            </tbody>
+        </table>
+    </section>
+    <!-- tasks section ends-->
+    <script src="script.js"></script>
+</body>
+</html>
